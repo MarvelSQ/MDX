@@ -36,6 +36,16 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test: /\.mdx?$/,
+        use: [
+          {
+            loader: '@mdx-js/loader',
+            /** @type {import('@mdx-js/loader').Options} */
+            options: {},
+          },
+        ],
+      },
     ],
   },
   plugins: [
